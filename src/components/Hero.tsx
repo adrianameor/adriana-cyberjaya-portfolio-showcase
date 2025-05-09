@@ -48,7 +48,7 @@ const Hero = () => {
             className="border-portfolio-teal text-portfolio-teal hover:bg-portfolio-teal/10 font-mono"
             asChild
           >
-            <a href="#projects">View My Work</a>
+            <a href="#projects">View My Resume</a>
           </Button>
         </div>
       </div>
