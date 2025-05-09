@@ -1,0 +1,90 @@
+
+import React from "react";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
+
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+}
+
+const projectsData: Project[] = [
+  {
+    title: "Car Pooling and Rental Platform",
+    description: "A comprehensive platform allowing users to share rides or rent vehicles for their transportation needs, reducing carbon footprint.",
+    technologies: ["Java", "MySQL", "HTML", "CSS", "PHP"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    title: "Chess Application",
+    description: "Interactive chess game featuring AI opponents with multiple difficulty levels and multiplayer functionality.",
+    technologies: ["Python", "C++"],
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    title: "Robot Battle Game",
+    description: "A strategy-based game where players program robots to battle against each other in a virtual arena.",
+    technologies: ["Java", "Freemat"],
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    title: "Car Arrival Simulator",
+    description: "Simulation tool that models and predicts traffic patterns and vehicle arrivals at different locations.",
+    technologies: ["Python", "Freemat"],
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    title: "Tourism in Denmark Website",
+    description: "Interactive website showcasing tourist attractions, accommodations, and cultural experiences in Denmark.",
+    technologies: ["HTML", "CSS", "PHP", "MySQL"],
+    image: "https://images.unsplash.com/photo-1561450683-5a4caa602475?auto=format&fit=crop&w=600&q=80"
+  }
+];
+
+const Projects = () => {
+  return (
+    <section id="projects" className="container mx-auto px-4 py-20 bg-portfolio-navy">
+      <h2 className="section-header">Projects</h2>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projectsData.map((project, index) => (
+          <Card key={project.title} className="bg-portfolio-lightNavy border-portfolio-lightestNavy overflow-hidden project-card opacity-0 animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
+            <div className="h-48 overflow-hidden">
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-portfolio-white">{project.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-portfolio-slate mb-4">
+                {project.description}
+              </CardDescription>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map(tech => (
+                  <Badge key={tech} variant="outline" className="bg-portfolio-navy/50 text-portfolio-teal border-portfolio-teal">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+            <CardFooter>
+              <a href="#" className="text-portfolio-teal text-sm hover:underline flex items-center group">
+                Learn more 
+                <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
+              </a>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
