@@ -36,7 +36,7 @@ const About = () => {
             
             <div className="space-y-4">
               <div>
-                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science</h4>
+                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science in software engineering</h4>
                 <p className="text-portfolio-slate">Multimedia University (MMU), Cyberjaya</p>
                 <p className="text-sm text-portfolio-lightSlate">2021 - Present</p>
               </div>
