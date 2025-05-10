@@ -48,7 +48,7 @@ const Hero = () => {
             className="border-portfolio-teal text-portfolio-teal hover:bg-portfolio-teal/10 font-mono"
             asChild
           >
-            <a href="/RESUME_ADRIANAMEORAZMAN (1).pdf" target="_blank" rel="noopener noreferrer">View My Resume</a>
+            <a href="/RESUME_ADRIANABINTIMEORAZMAN.pdf" target="_blank" rel="noopener noreferrer">View My Resume</a>
           </Button>
         </div>
       </div>
