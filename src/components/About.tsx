@@ -22,8 +22,7 @@ const About = () => {
           </p>
           <p className="mb-6">
             Outside of coding, I enjoy exploring new technologies, participating in hackathons, 
-            and collaborating on open-source projects to expand my knowledge and contribute to 
-            the tech community.
+            and doing volunteer work to stay engaged with the community and grow beyond the classroom.
           </p>
         </div>
 
@@ -36,9 +35,9 @@ const About = () => {
             
             <div className="space-y-4">
               <div>
-                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science</h4>
+                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science in software engineering</h4>
                 <p className="text-portfolio-slate">Multimedia University (MMU), Cyberjaya</p>
-                <p className="text-sm text-portfolio-lightSlate">2021 - Present</p>
+                <p className="text-sm text-portfolio-lightSlate">Jul 2022 - Jul 2026</p>
               </div>
               
               <div className="pt-4 border-t border-portfolio-lightestNavy">

@@ -9,12 +9,12 @@ interface SkillProps {
 }
 
 const skillsData = [
-  { name: "Python", level: 80 },
-  { name: "Java", level: 85 },
+  { name: "Python", level: 75 },
+  { name: "Java", level: 75 },
   { name: "C++", level: 75 },
-  { name: "Freemat", level: 70 },
+  { name: "Freemat", level: 60 },
   { name: "MySQL", level: 75 },
-  { name: "HTML", level: 90 },
+  { name: "HTML", level: 85 },
   { name: "CSS", level: 85 },
   { name: "PHP", level: 65 },
 ];
@@ -84,7 +84,7 @@ const Skills = () => {
           "opacity-0 animate-fade-in-up"
         )}>
           <h3 className="text-xl font-semibold mb-3">Frontend</h3>
-          <p className="text-portfolio-slate">Experience with responsive design, CSS frameworks, and modern UI development.</p>
+          <p className="text-portfolio-slate">Experience in building responsive interfaces using modern CSS frameworks and UI tools.</p>
         </div>
         
         <div className={cn(
@@ -92,7 +92,7 @@ const Skills = () => {
           "opacity-0 animate-fade-in-up delay-100"
         )}>
           <h3 className="text-xl font-semibold mb-3">Backend</h3>
-          <p className="text-portfolio-slate">Knowledge of server-side programming, database management, and API development.</p>
+          <p className="text-portfolio-slate">Familiar with database design and management, with a strong focus on logical thinking and problem-solving.</p>
         </div>
         
         <div className={cn(
@@ -100,7 +100,7 @@ const Skills = () => {
           "opacity-0 animate-fade-in-up delay-200"
         )}>
           <h3 className="text-xl font-semibold mb-3">Problem Solving</h3>
-          <p className="text-portfolio-slate">Strong analytical skills with experience in algorithm design and optimization.</p>
+          <p className="text-portfolio-slate">Enjoy tackling logical challenges and continuously improving my approach through hands-on learning.</p>
         </div>
       </div>
     </section>

@@ -15,31 +15,31 @@ const projectsData: Project[] = [
   {
     title: "Car Pooling and Rental Platform",
     description: "A comprehensive platform allowing users to share rides or rent vehicles for their transportation needs, reducing carbon footprint.",
-    technologies: ["Java", "MySQL", "HTML", "CSS", "PHP"],
+    technologies: ["Python", "SQLite"],
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
   },
   {
     title: "Chess Application",
     description: "Interactive chess game featuring AI opponents with multiple difficulty levels and multiplayer functionality.",
-    technologies: ["Python", "C++"],
+    technologies: ["Java"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
   },
   {
     title: "Robot Battle Game",
     description: "A strategy-based game where players program robots to battle against each other in a virtual arena.",
-    technologies: ["Java", "Freemat"],
+    technologies: ["C++"],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
   },
   {
     title: "Car Arrival Simulator",
     description: "Simulation tool that models and predicts traffic patterns and vehicle arrivals at different locations.",
-    technologies: ["Python", "Freemat"],
+    technologies: ["Freemat"],
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80"
   },
   {
     title: "Tourism in Denmark Website",
     description: "Interactive website showcasing tourist attractions, accommodations, and cultural experiences in Denmark.",
-    technologies: ["HTML", "CSS", "PHP", "MySQL"],
+    technologies: ["HTML", "CSS"],
     image: "https://images.unsplash.com/photo-1561450683-5a4caa602475?auto=format&fit=crop&w=600&q=80"
   }
 ];
