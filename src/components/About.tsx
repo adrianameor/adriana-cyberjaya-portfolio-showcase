@@ -35,9 +35,9 @@ const About = () => {
             
             <div className="space-y-4">
               <div>
-                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science in software engineering</h4>
+                <h4 className="text-portfolio-white font-medium">Bachelor of Computer Science in Software Engineering</h4>
                 <p className="text-portfolio-slate">Multimedia University (MMU), Cyberjaya</p>
-                <p className="text-sm text-portfolio-lightSlate">Jul 2022 - Jul 2026</p>
+                <p className="text-sm text-portfolio-lightSlate">Jul 2021 - Jul 2026</p>
               </div>
               
               <div className="pt-4 border-t border-portfolio-lightestNavy">

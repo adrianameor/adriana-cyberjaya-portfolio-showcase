@@ -6,7 +6,7 @@ import { ArrowDown } from "lucide-react";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = "Software Engineering Intern.";
+  const fullText = "Software Engineering Student.";
   
   useEffect(() => {
     if (isTyping && displayText.length < fullText.length) {

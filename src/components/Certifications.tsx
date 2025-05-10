@@ -9,14 +9,16 @@ const certificationsData = [
     issuer: "Huawei",
     date: "Aug 2023",
     description: "Certification focusing on big data frameworks, analytics, and processing systems.",
-    skills: ["Hadoop", "Data Analytics", "Data Processing"]
+    skills: ["Hadoop", "Data Analytics", "Data Processing"],
+    certificateLink: "/hciaBigData.png"
   },
   {
     title: "Microsoft Networking & Insight",
     issuer: "Microsoft",
     date: "Mar 2023",
     description: "Advanced networking concepts and monitoring insights for Microsoft infrastructures.",
-    skills: ["Network Design", "System Monitoring", "Infrastructure Management"]
+    skills: ["Network Design", "System Monitoring", "Infrastructure Management"],
+    certificateLink: "/ADRIANA BINTI MEOR AZMAN - Certificate of Participation.pdf"
   }
 ];
 
@@ -52,6 +54,16 @@ const Certifications = () => {
                   </Badge>
                 ))}
               </div>
+              {cert.certificateLink && (
+                <a 
+                  href={cert.certificateLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="mt-4 inline-block text-portfolio-teal hover:underline"
+                >
+                  View Certificate
+                </a>
+              )}
             </CardContent>
           </Card>
         ))}
