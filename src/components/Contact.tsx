@@ -62,7 +62,7 @@ const Contact = () => {
           <div className="mt-8 pt-6 border-t border-portfolio-lightestNavy text-center">
             <p className="text-portfolio-lightSlate">Or reach me directly at:</p>
             <a href="mailto:adriana@example.com" className="text-portfolio-teal hover:underline">
-              adriana@example.com
+              adrianameorazman@gmail.com
             </a>
           </div>
         </div>
