@@ -55,7 +55,7 @@ const Contact = () => {
             <Button 
               className="bg-portfolio-teal hover:bg-portfolio-teal/80 text-portfolio-navy font-medium w-full"
             >
-              Send Message:-:
+              Send Message
             </Button>
           </form>
           
