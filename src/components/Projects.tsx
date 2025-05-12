@@ -9,6 +9,7 @@ interface Project {
   description: string;
   technologies: string[];
   image: string;
+  link?: string;
 }
 
 const projectsData: Project[] = [
@@ -16,7 +17,8 @@ const projectsData: Project[] = [
     title: "Chess Application",
     description: "Interactive chess game featuring AI opponents with multiple difficulty levels and multiplayer functionality.",
     technologies: ["Java"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
+    link: "https://github.com/adrianameor/chess-application.git" 
   },
   {
     title: "Robot Battle Game",
@@ -28,7 +30,8 @@ const projectsData: Project[] = [
     title: "Car Arrival Simulator",
     description: "Simulation tool that models and predicts traffic patterns and vehicle arrivals at different locations.",
     technologies: ["Freemat"],
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80",
+    link: "https://github.com/adrianameor/car-wash-simulator.git"
   },
   {
     title: "Tourism in Denmark Website",
@@ -69,10 +72,18 @@ const Projects = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <a href="#" className="text-portfolio-teal text-sm hover:underline flex items-center group">
+              {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-portfolio-teal text-sm hover:underline flex items-center group"
+              >
                 Learn more 
                 <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
               </a>
+            )}
+
             </CardFooter>
           </Card>
         ))}
