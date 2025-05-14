@@ -2,8 +2,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, User } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea"; // This can be removed if not used elsewhere, but let's keep it for now
+import { Mail, User, MessageSquare } from "lucide-react"; // Added MessageSquare for WhatsApp icon
 
 const Contact = () => {
   return (
@@ -12,59 +12,28 @@ const Contact = () => {
         <h2 className="section-header mx-auto">Get In Touch</h2>
         <p className="text-portfolio-slate mb-8">
           I'm currently looking for software engineering internship opportunities. 
-          Whether you have a question or just want to say hi, I'll do my best to get back to you!
+          Feel free to reach out if you have any questions or just want to connect!
         </p>
         
-        <div className="bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg p-6">
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label htmlFor="name" className="text-sm text-portfolio-lightestSlate flex items-center gap-2">
-                  <User size={16} className="text-portfolio-teal" />
-                  Name
-                </label>
-                <Input 
-                  id="name" 
-                  placeholder="Your name" 
-                  className="bg-portfolio-navy border-portfolio-lightestNavy focus:border-portfolio-teal"
-                />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm text-portfolio-lightestSlate flex items-center gap-2">
-                  <Mail size={16} className="text-portfolio-teal" />
-                  Email
-                </label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="bg-portfolio-navy border-portfolio-lightestNavy focus:border-portfolio-teal"
-                />
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <label htmlFor="message" className="text-sm text-portfolio-lightestSlate">Message</label>
-              <Textarea 
-                id="message" 
-                placeholder="How can I help you?" 
-                className="bg-portfolio-navy border-portfolio-lightestNavy focus:border-portfolio-teal min-h-32"
-              />
-            </div>
-            
+        <div className="bg-portfolio-lightNavy border border-portfolio-lightestNavy rounded-lg p-8 flex flex-col items-center">
+          <p className="text-portfolio-lightSlate mb-6 text-lg">
+            The best way to reach me is via WhatsApp.
+          </p>
+          <a
+            href="https://wa.me/60167199579" // IMPORTANT: Replace YOUR_PHONE_NUMBER with your actual WhatsApp number (e.g., 60123456789)
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button 
-              className="bg-portfolio-teal hover:bg-portfolio-teal/80 text-portfolio-navy font-medium w-full"
+              className="bg-portfolio-teal hover:bg-portfolio-teal/80 text-portfolio-navy font-medium px-8 py-3 text-lg flex items-center gap-2"
             >
-              Send Message
+              <MessageSquare size={20} />
+              Chat on WhatsApp
             </Button>
-          </form>
-          
-          <div className="mt-8 pt-6 border-t border-portfolio-lightestNavy text-center">
-            <p className="text-portfolio-lightSlate">Or reach me directly at:</p>
-            <a href="mailto:adriana@example.com" className="text-portfolio-teal hover:underline">
-              adrianameorazman@gmail.com
-            </a>
-          </div>
+          </a>
+          <p className="text-portfolio-slate mt-8 text-sm">
+            Alternatively, you can email me at <a href="mailto:adrianameorazman@gmail.com" className="text-portfolio-teal hover:underline">adrianameorazman@gmail.com</a>.
+          </p>
         </div>
       </div>
     </section>
