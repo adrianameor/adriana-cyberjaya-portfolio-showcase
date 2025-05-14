@@ -15,20 +15,21 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: "Chess Application",
-    description: "Interactive chess game featuring AI opponents with multiple difficulty levels and multiplayer functionality.",
+    description: "Interactive Kawazam chess game as GUI-based Java Application with multiple difficulty levels and multiplayer functionality.",
     technologies: ["Java"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
     link: "https://github.com/adrianameor/chess-application.git" 
   },
   {
     title: "Robot Battle Game",
-    description: "A strategy-based game where players program robots to battle against each other in a virtual arena.",
+    description: "A strategy-based game in command-line where robots battle against each other in a virtual arena.",
     technologies: ["C++"],
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    link: "https://github.com/adrianameor/robot.git" 
   },
   {
-    title: "Car Arrival Simulator",
-    description: "Simulation tool that models and predicts traffic patterns and vehicle arrivals at different locations.",
+    title: "Car Wash Simulator",
+    description: "Simulation tool that models and predicts car arrival patterns at different wash bay.",
     technologies: ["Freemat"],
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80",
     link: "https://github.com/adrianameor/car-wash-simulator.git"
@@ -37,7 +38,8 @@ const projectsData: Project[] = [
     title: "Tourism in Denmark Website",
     description: "Interactive website showcasing tourist attractions, accommodations, and cultural experiences in Denmark.",
     technologies: ["HTML", "CSS"],
-    image: "/tourism.jpg"
+    image: "/tourism.jpg",
+    link: "https://github.com/adrianameor/tourism-website.git"
   }
 ];
 
