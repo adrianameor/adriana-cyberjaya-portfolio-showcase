@@ -7,7 +7,7 @@ const certificationsData = [
   {
     title: "Huawei HCIA - Big Data",
     issuer: "Huawei",
-    date: "Aug 2023",
+    date: "Aug 2024",
     description: "Certification focusing on big data frameworks, analytics, and processing systems.",
     skills: ["Hadoop", "Data Analytics", "Data Processing"],
     certificateLink: "/hciaBigData.png"
@@ -15,10 +15,18 @@ const certificationsData = [
   {
     title: "Microsoft Networking & Insight",
     issuer: "Microsoft",
-    date: "Mar 2023",
+    date: "Dec 2024",
     description: "Advanced networking concepts and monitoring insights for Microsoft infrastructures.",
     skills: ["Network Design", "System Monitoring", "Infrastructure Management"],
     certificateLink: "/ADRIANA BINTI MEOR AZMAN - Certificate of Participation.pdf"
+  },
+  {
+    title: "Huawei HCIA - AI",
+    issuer: "Huawei",
+    date: "June 2025",
+    description: "Comprehensive understanding of AI principles, cloud computing, and big data analytics with practical insights into Huawei's AI infrastructure and solutions.",
+    skills: ["Artificial Intelligence", "Cloud Computing", "Big Data Analytics"],
+    certificateLink: "/huaweiAI.png"
   }
 ];
 
